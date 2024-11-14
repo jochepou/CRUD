@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y tabla de productos</title>
+    <link href="../output.css" rel="stylesheet">
+</head>
+<body class="mr-8 m-5">
+  <h2 class="text-3xl font-bold underline">Agregar Productos</h2>
+
+  <form id="formulario">
+    <div class="grid gap-6 mb-6 md:grid-cols-2"></div>
+      <div>
+        <label for="codigo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Código: </label>
+        <input type="number" id="codigo" placeholder="Escribi aqui el código">
+        <br><br>
+      </div>
+
+      <div>
+        <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre de producto: </label>
+        <input type="text" id="nombre" placeholder="Escribi aqui el nombre del producto" required>
+        <br><br>
+      </div>
+
+      <div>
+        <label for="precio" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Precio: </label>
+        <input type="number" id="precio" placeholder="Escribi aqui el precio" required>
+        <br><br>
+      </div>
+
+      <div>
+        <label for="descripcion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripcion: </label>
+        <input type="text" id="descripcion" placeholder="Escribi aqui una descripcion" required>
+        <br><br>
+      </div>
+
+      <div>
+        <label for="imagen" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imagen: </label>
+        <input type="text" id="imagen" placeholder="Escribi el link de la imagen" required>
+        <br><br>
+      </div>
+
+      <div>
+        <button class="bg-green-500 hover:bg-red-500 text-dark p-2 rounded-lg w-24 mx-auto block my-8" type="button" id="guardar">Agregar producto</button>
+
+      </div>
+    </div>
+  </form>
+  <h2 class="text-center text-4xl"> Lista de productos </h2> <br>     
+    <div>
+      <table id="tablaProductos" >
+          <thead >
+            <tr>
+              <th>Código</th>
+              <th>Imágen</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se agregarán las filas -->
+
+          </tbody>
+      </table>
+    </div>
+  </h2>
+  <p>Volver a:</p>
+  <a href="principal.html">Página Principal</a><br>
+  <script type="module" src="../js/index.js"></script>
+</body>
+</html>
